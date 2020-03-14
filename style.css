@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration:  none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+/* Header */
+.header-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: white;
+}
+
+    /* Navbar */
+    .navbar {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        box-shadow: 0px 5px 10px #888888;
+    }
+
+    .brand {
+        font-size: 32px;
+        font-weight: 700;
+        color: black;
+    }
+
+    .search {
+        margin-left: auto;
+        border: 1px solid black;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .search input {
+        border: none;
+        font-size: 18px;
+    }
+
+    .toggle-button {
+        margin-left: 50px;
+        border: 1px solid red;
+        padding: 8px;
+        border-radius: 5px;
+        color: red;
+    }
+
+    .toggle-button:hover {
+        border: 1px solid black;
+        color: black;
+    }
+    /* End of Navbar */
+    .cart {
+        position: fixed;
+        top: 78px;
+        right: 0;
+        min-width: 500px;
+        box-shadow: -5px 5px 5px #888888;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.7s;
+        z-index: 999;
+    }
+
+    .cart-none {
+        right: -500px;
+        box-shadow: none;
+        opacity: 0;
+    }
+
+    .cart-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #close-button {
+        color: white;
+    }
+
+    #close-button:hover {
+        color: black;
+    }
+
+    .cart-main {
+        background-color: white;
+    }
+
+    .cart-item {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .cart-item:hover {
+        box-shadow: 0px 0px 10px #888888;
+        background-color: #e2d8d8;
+    }
+
+    .cart-item p {
+        font-size: 18px;
+        font-weight: 600;
+        flex-grow: 1;
+    }
+
+    .cart-item-button {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cart-item-button button {
+        padding: 5px;
+    }
+
+    .cart-item-button button:hover {
+        color: red;
+    }
+
+    .cart-item-button span {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .cart-header, .cart-footer {
+        color: white;
+        padding: 10px;
+        background-color: #00bcd4;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    /* Cart */
+    /* End of Cart */
+/* End of Header */
+
+/* Main */
+main {
+    margin-top: 78px;
+}
+
+.main-header {
+    padding: 30px 50px;
+    position: relative;
+}
+
+.main-header:after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    bottom: 0;
+    left: 50px;
+    height: 2px;
+    background-color: black;
+    z-index: -999;
+}
+
+.main-content {
+    padding: 30px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+    /* Shopping Item */
+    .shopping-item {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 5px 5px 5px #888888;
+    }
+
+    .item-header img {
+        width: 100%;
+    }
+
+    .item-content {
+        padding: 10px;
+        text-align: left;
+    }
+
+    .item-footer {
+        height: 50px;
+        background-color: #00bcd4;
+        color: whitesmoke;
+        font-size: 20px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .item-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+
+    .item-background button {
+        padding: 10px 20px;
+        background-color: turquoise;
+        color: whitesmoke;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px #888888;
+    }
+
+    .item-background button:hover {
+        background-color: whitesmoke;
+        color: turquoise;
+    }
+
+    .shopping-item:hover .item-background {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ff6347ab;
+    }
+    /* End of Shopping Item */
+
+/* End of Main */
