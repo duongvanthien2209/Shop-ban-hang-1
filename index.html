@@ -29,26 +29,18 @@
                 <h4>Cart</h4>
                 <button id="close-button"><i class="fas fa-box-open fa-lg"></i></button>
             </div>
-            <ul class="cart-main">
-                <li class="cart-item">
+            <ul class="cart-main" id="cart-main">
+                <!-- <li class="cart-item">
                     <p>Item</p>
                     <div class="cart-item-button">
                         <button class="cart-button"><i class="fas fa-angle-up fa-lg"></i></button>
                         <span>0</span>
                         <button class="cart-button"><i class="fas fa-angle-down fa-lg"></i></button>
                     </div>
-                </li>
-                <li class="cart-item">
-                    <p>Item</p>
-                    <div class="cart-item-button">
-                        <button class="cart-button"><i class="fas fa-angle-up fa-lg"></i></button>
-                        <span>0</span>
-                        <button class="cart-button"><i class="fas fa-angle-down fa-lg"></i></button>
-                    </div>
-                </li>
+                </li> -->
             </ul>
             <div class="cart-footer">
-                <p>Tổng: <span>150.000</span></p>
+                <p>Tổng: <span id="total">150.000</span></p>
             </div>
         </div>
     </header>
@@ -56,8 +48,8 @@
         <div class="main-header">
             <h1>Items</h1>
         </div>
-        <div class="main-content">
-            <div class="shopping-item">
+        <div class="main-content" id="main-content">
+            <!-- <div class="shopping-item">
                 <div class="item-header">
                     <img src="https://picsum.photos/300/200" alt="Picture">
                 </div>
@@ -71,95 +63,10 @@
                 <div class="item-background">
                     <button>Add to cart</button>
                 </div>
-            </div>
-            <div class="shopping-item">
-                <div class="item-header">
-                    <img src="https://picsum.photos/300/200" alt="Picture">
-                </div>
-                <div class="item-content">
-                    <h2>Title</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit libero iusto, eos, dolorem exercitationem odio totam voluptatum velit vitae veritatis explicabo atque neque, autem cupiditate sit id ipsa architecto quos!</p>
-                </div>
-                <div class="item-footer">
-                    <p>Giá: <span>200.000</span></p>
-                </div>
-                <div class="item-background">
-                    <button>Add to cart</button>
-                </div>
-            </div>
-            <div class="shopping-item">
-                <div class="item-header">
-                    <img src="https://picsum.photos/300/200" alt="Picture">
-                </div>
-                <div class="item-content">
-                    <h2>Title</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit libero iusto, eos, dolorem exercitationem odio totam voluptatum velit vitae veritatis explicabo atque neque, autem cupiditate sit id ipsa architecto quos!</p>
-                </div>
-                <div class="item-footer">
-                    <p>Giá: <span>200.000</span></p>
-                </div>
-                <div class="item-background">
-                    <button>Add to cart</button>
-                </div>
-            </div>
-            <div class="shopping-item">
-                <div class="item-header">
-                    <img src="https://picsum.photos/300/200" alt="Picture">
-                </div>
-                <div class="item-content">
-                    <h2>Title</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit libero iusto, eos, dolorem exercitationem odio totam voluptatum velit vitae veritatis explicabo atque neque, autem cupiditate sit id ipsa architecto quos!</p>
-                </div>
-                <div class="item-footer">
-                    <p>Giá: <span>200.000</span></p>
-                </div>
-                <div class="item-background">
-                    <button>Add to cart</button>
-                </div>
-            </div>
-            <div class="shopping-item">
-                <div class="item-header">
-                    <img src="https://picsum.photos/300/200" alt="Picture">
-                </div>
-                <div class="item-content">
-                    <h2>Title</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit libero iusto, eos, dolorem exercitationem odio totam voluptatum velit vitae veritatis explicabo atque neque, autem cupiditate sit id ipsa architecto quos!</p>
-                </div>
-                <div class="item-footer">
-                    <p>Giá: <span>200.000</span></p>
-                </div>
-                <div class="item-background">
-                    <button>Add to cart</button>
-                </div>
-            </div>
-            <div class="shopping-item">
-                <div class="item-header">
-                    <img src="https://picsum.photos/300/200" alt="Picture">
-                </div>
-                <div class="item-content">
-                    <h2>Title</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit libero iusto, eos, dolorem exercitationem odio totam voluptatum velit vitae veritatis explicabo atque neque, autem cupiditate sit id ipsa architecto quos!</p>
-                </div>
-                <div class="item-footer">
-                    <p>Giá: <span>200.000</span></p>
-                </div>
-                <div class="item-background">
-                    <button>Add to cart</button>
-                </div>
-            </div>
+            </div> -->
         </div>
     </main>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            var toggleButton = document.getElementById('toggle');
-            var cart = document.getElementById('cart');
-            var header = document.getElementById('header');
-
-            toggleButton.addEventListener('click', () => {
-                cart.classList.toggle('cart-none');
-            });
-        });
-    </script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="shopping.js"></script>
 </body>
 

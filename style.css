@@ -196,6 +196,7 @@ main {
     .item-content {
         padding: 10px;
         text-align: left;
+        flex-grow: 1;
     }
 
     .item-footer {
